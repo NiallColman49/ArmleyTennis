@@ -1,0 +1,55 @@
+@import url(//db.onlinewebfonts.com/c/0f106940a384f214837a8df504786e1a?family=Formular);
+@import url(//db.onlinewebfonts.com/c/353efa59e46e6dcb29eeada2f25f490a?family=Formular+Medium);
+
+@font-face {
+  font-family: "Formular Medium";
+
+  src: url("//db.onlinewebfonts.com/t/353efa59e46e6dcb29eeada2f25f490a.eot");
+
+  src: url("//db.onlinewebfonts.com/t/353efa59e46e6dcb29eeada2f25f490a.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/353efa59e46e6dcb29eeada2f25f490a.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/353efa59e46e6dcb29eeada2f25f490a.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/353efa59e46e6dcb29eeada2f25f490a.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/353efa59e46e6dcb29eeada2f25f490a.svg#Formular Medium")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Formular";
+
+  src: url("//db.onlinewebfonts.com/t/0f106940a384f214837a8df504786e1a.eot");
+
+  src: url("//db.onlinewebfonts.com/t/0f106940a384f214837a8df504786e1a.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0f106940a384f214837a8df504786e1a.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/0f106940a384f214837a8df504786e1a.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/0f106940a384f214837a8df504786e1a.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/0f106940a384f214837a8df504786e1a.svg#Formular")
+      format("svg");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .snap {
+    scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
+  }
+  .snap-y {
+    --scroll-snap-direction: y;
+  }
+  .snap-mandatory {
+    --scroll-snap-constraint: mandatory;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
+}
