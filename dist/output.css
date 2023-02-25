@@ -636,8 +636,8 @@ video {
   margin-right: 3rem;
 }
 
-.mt-64{
-  margin-top: 16rem;
+.mt-40{
+  margin-top: 10rem;
 }
 
 .mt-5{
@@ -716,6 +716,14 @@ video {
   width: 22rem;
 }
 
+.w-\[20\%\]{
+  width: 20%;
+}
+
+.w-1\/4{
+  width: 25%;
+}
+
 .w-3\/4{
   width: 75%;
 }
@@ -756,6 +764,10 @@ video {
   scroll-snap-align: start;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -788,8 +800,8 @@ video {
   justify-content: space-evenly;
 }
 
-.gap-10{
-  gap: 2.5rem;
+.gap-0{
+  gap: 0px;
 }
 
 .gap-5{
@@ -841,13 +853,13 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-12{
-  padding: 3rem;
+.p-8{
+  padding: 2rem;
 }
 
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-10{
@@ -860,25 +872,30 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
-.pl-12{
-  padding-left: 3rem;
+.pt-12{
+  padding-top: 3rem;
 }
 
-.pr-12{
-  padding-right: 3rem;
+.pl-8{
+  padding-left: 2rem;
 }
 
 .pr-10{
   padding-right: 2.5rem;
 }
 
-.pt-12{
-  padding-top: 3rem;
+.pt-0{
+  padding-top: 0px;
 }
 
 .text-left{
@@ -985,6 +1002,62 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 640px){
+  .sm\:mt-64{
+    margin-top: 16rem;
+  }
+
+  .sm\:w-\[45\%\]{
+    width: 45%;
+  }
+
+  .sm\:w-2\/5{
+    width: 40%;
+  }
+
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:gap-10{
+    gap: 2.5rem;
+  }
+
+  .sm\:p-12{
+    padding: 3rem;
+  }
+
+  .sm\:p-0{
+    padding: 0px;
+  }
+
+  .sm\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .sm\:pl-12{
+    padding-left: 3rem;
+  }
+
+  .sm\:pr-6{
+    padding-right: 1.5rem;
+  }
+
+  .sm\:pr-12{
+    padding-right: 3rem;
+  }
+
+  .sm\:pt-12{
+    padding-top: 3rem;
+  }
+
+  .sm\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 @media (min-width: 768px){
   .md\:flex{
     display: flex;
@@ -994,6 +1067,10 @@ video {
 @media (min-width: 1024px){
   .lg\:grid{
     display: grid;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:border-t{
